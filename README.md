@@ -149,3 +149,7 @@ state_management/                   # Generated during workflow
 specifications/                     # Generated during workflow
 └── {issue_key}_specification_{timestamp}.md
 ```
+
+## Tips
+
+- Set CLAUDE_BASH_MAINTAIN_PROJECT_WORKING_DIR=1 in your environment variables to force Claude Code to always return to the original working directory after each Bash command. This saves on both tokens and Claude being confused about where it is.
